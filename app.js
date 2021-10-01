@@ -6,7 +6,7 @@ import axios from 'axios';
 import CurrentWeather from './components/currentWeather'
 export default function App() {
   const API_URL = (lat, long) =>
-    `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${long}&appid=3780b59f3e313bbe20a3699001209872&lang=fr&units=metric`;
+    `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${long}&appid=&lang=fr&units=metric`;
 
   const [loading, setLoading] = React.useState(true);
   const [data, setData] = React.useState(null);
